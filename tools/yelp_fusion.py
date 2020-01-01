@@ -104,11 +104,11 @@ def one_dict_to_df(id_, in_list):
     Parameters: id_ (str) - a string of single business id_
                 in_list (list) - a list of review information, within the list, each review is a dict
 
-    Returns: df (DataFrame) - a dataframe which users' information are dropped
+    Returns: df (DataFrame) - a dataframe
     """
     business_id = [id_]*len(in_list)
     id_df = pd.DataFrame({'business_id':business_id})
-    main_df = pd.DataFrame(in_list).drop(columns='user')
+    main_df = pd.DataFrame(in_list)
     df = pd.concat([id_df, main_df], axis=1)
 
     return df
@@ -122,7 +122,7 @@ def dict_to_df(in_dict):
     """
     all_ids = list(in_dict)
     all_dfs = [one_dict_to_df(i, in_dict[i]) for i in all_ids]
-    df = pd.concat(all_dfs, axis=0)
+    df = pd.concat(all_dfs, axis=0, sort=False).reset_index(drop=True)
 
     return df
 
