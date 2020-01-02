@@ -1,5 +1,7 @@
 # Yelp
 Analysis of Bay Area restaurants. <br>
+Total restaurants collected: 19,223
+Total reviews collected: 56,108
 
 Data Source: <br>
 Yelp Fusion: [API Link](https://www.yelp.com/fusion) <br>
