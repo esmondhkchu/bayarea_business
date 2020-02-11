@@ -224,17 +224,14 @@ Last Update: 2/9/2020
 │       ├── Yountville_CA_businesses_info.json
 │       └── Yountville_CA_reviews.json
 ├── data_analysis
-│   ├── EDA.ipynb
-│   └── NLP_model.ipynb
+│   ├── NLP_model.ipynb
+│   └── geospatial_exploration.ipynb
 ├── data_extraction
 │   ├── bay_area_cities_data_extraction.ipynb
 │   └── yelp_data_extraction.ipynb
 ├── data_wrangling
 │   └── data_wrangling.ipynb
 └── tools
-    ├── __pycache__
-    │   ├── data_tools.cpython-37.pyc
-    │   └── yelp_fusion.cpython-37.pyc
     ├── data_tools.py
     └── yelp_fusion.py
 ```
