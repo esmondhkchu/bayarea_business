@@ -1,4 +1,4 @@
-# Yelp
+# Bay Area Business
 Analysis of Bay Area restaurants. <br>
 Total restaurants collected: 19,223 <br>
 Total reviews collected: 56,108
